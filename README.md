@@ -1,6 +1,19 @@
 Spring boot Cloud Stream RabbitMQ
 
 
+Start the rabbitmq docker using
+```
+docker run -d --hostname my-test-rabbit --name test-rabbit -p 15672:15672 -p 5672:5672 rabbitmq:3-management
+```
+
+default credentials are 
+```
+guest/guest
+```
+
+Access ui on http://localhost:15672
+
+
 Using the shared model between services
 
 The model is in user-view-dto component.
