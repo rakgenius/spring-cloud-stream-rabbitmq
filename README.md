@@ -51,3 +51,13 @@ Add the local repository
     </repository>
 </repositories>
 ```
+
+
+Implementing spring boot amqp using rabbitmq
+
+This uses a user defined queue and exchange name.
+Producer sends a message of type "Order" and consumer receives it
+By default producer sends the data in the byte format.\
+To convert it into json we need to override certain configurations.\
+Also we need to override configuration on the listener side so that\
+listener recives the message in json format
