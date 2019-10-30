@@ -13,6 +13,6 @@ jobs:
       run: echo Hello, world!
     - name: Run a multi-line script
       run: |
-        cd message-consumer && mvn package -DskipTests
-        cd message-producer && mvn package -DskipTests
+        cd ./message-consumer && mvn package -DskipTests
+        cd ../message-producer && mvn package -DskipTests
         
